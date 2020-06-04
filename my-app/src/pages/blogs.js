@@ -10,7 +10,9 @@ const ReactMarkdown = require('react-markdown')
 
 
 function Body(){
-    const input = '# This is a header\n\nAnd this is a paragraph'
+    const input = "## hello everybody \ni just wanted to say that i really really enjoy doing this"
+    
+    // '# This is a header\n\nAnd this is a paragraph'
 
     return(
         <div className="Body">
