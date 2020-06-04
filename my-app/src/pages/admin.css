@@ -42,10 +42,48 @@
     
 }
 
+.FormBox{
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 10%;
+
+    border:solid;
+    display: flex;
+    flex-direction: column;
+    width:1000px;
+    height:auto;
+
+}
+.FormBox>div{
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    margin-top: 30px;
+}
+.FormBox>div>div{
+    margin-right: 20px;
+
+}
+
 #loginInput{
     height:30px;
     border-radius: 5px;
     border: transparent;
     box-shadow: 0 0 2px 2px darkgray;
+
+}
+
+#content-input{
+    width: 300px;
+    height:30px;
+}
+#content-input-area{
+    width: 600px;
+    height:400px;
+
 
 }

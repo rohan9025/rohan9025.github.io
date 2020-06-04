@@ -23,6 +23,7 @@ function App() {
             <Route exact path='/blogs'><Blogs/></Route>
             <Route exact path='/home'><Home/></Route>
             <Route exact path='/admin'><Admin/></Route>
+            
 
     </Router>
 
