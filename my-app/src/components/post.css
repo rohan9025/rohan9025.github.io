@@ -1,0 +1,50 @@
+
+.Post{
+    display: flex;
+    /* flex-direction: column; */
+    width:90%;
+    height:auto;
+    /* border: solid; */
+    /* box-shadow: 2px 2px; */
+    box-shadow: 0 0 2px 2px darkgray; /* with blur shadow*/
+    margin-bottom: 50px;
+}
+.Right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.Left{
+    width: 20%;
+    background-color: mediumaquamarine;
+    border-right: slategrey;
+}
+
+.Title{
+    /* border:solid; */
+    /* box-shadow: 2px 2px; */
+    display: flex;
+    border-bottom: solid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+
+}
+.Content{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.ImagePost{
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.weekendthrill.com%2Fwp-content%2Fuploads%2F2016%2F07%2F1-1.jpg&f=1&nofb=1");
+    width: 150px;
+    height: 150px;
+    background-size: 300px ;
+    border-radius: 50%;
+    margin-right: 100px;
+    
+}
+.PostName{
+    margin: auto;
+    margin-right: 200px;
+}
