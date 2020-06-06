@@ -3,6 +3,14 @@
     /* padding-top: -40px; */
 
 }
+
+.AddPost{
+    display: flex;
+    flex-direction: column;
+}
+.Preview{
+}
+
 .LoginBox{
     position: absolute;
 	top:0;
@@ -51,11 +59,13 @@
     margin: auto;
     margin-top: 10%;
 
-    border:solid;
+    /* border:solid; */
     display: flex;
     flex-direction: column;
     width:1000px;
-    height:auto;
+    /* height:auto; */
+    /* height: 150%; */
+    /* border-bottom: none; */
 
 }
 .FormBox>div{

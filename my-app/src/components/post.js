@@ -39,18 +39,19 @@ function Post(props){
                 <div className="Title">
 
                     <div className="PostName">{props.title}</div>
-                    <div className="ImagePost" />
+                    <div className="ImagePost" 
+                    style={{"backgroundImage":`url(${props.displayPic})`}}/> 
 
                 </div>
-                <div className="Content">
-                    <p>
-                    <ReactMarkdown source={props.content} />
-                    </p>
+                <div className="Content" dangerouslySetInnerHTML={{__html:props.content}}>
+                    {/* <p> */}
+                    {/* <ReactMarkdown source={props.content} /> */}
+                    {/* </p> */}
                     {/* <iframe style={{"height":"500px", "width":"700px"}}
                     src="https://docs.google.com/document/d/1cRd7YWFKj1nRVZWL89oAJmlOmxN8guJKG3d_KlsDy84/edit?usp=sharing"></iframe> */}
                 </div>
                 <div className="Images">
-                    <Slideshow/>
+                    <Slideshow galleryImages={props.galleryImages}/>
                 </div>
             </div>
             

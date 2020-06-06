@@ -1,6 +1,6 @@
 
 import React from 'react';
-// import Navbar from '../components/navbar.js'
+import Navbar from '../components/navbar.js'
 import './home.css'
 import { Link } from 'react-router-dom';
 
@@ -8,6 +8,7 @@ function Home(){
 
     return(
         <div className="Home">
+            <Navbar/>
             <div className="CentralBox">
                 <div className="Image"/>
                 <div className="Name"><h2>Rohan R Nedungadi</h2></div>

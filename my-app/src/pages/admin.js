@@ -1,6 +1,12 @@
 import React,{ useState, useEffect } from 'react'
 import './admin.css'
 import Navbar from '../components/navbar'
+import Post from '../components/post'
+
+
+
+const ReactMarkdown = require('react-markdown')
+
 
 
 function Login(props){
@@ -25,6 +31,12 @@ function AddPost(){
 
     const [content,setContent]=useState("")
     const [title,setTitle]=useState("")
+    const [dp,setDp]=useState("")
+    const [gImg1,setgImg1]=useState("")
+    const [gImg2,setgImg2]=useState("")
+    const [gImg3,setgImg3]=useState("")
+    const images=[gImg1,gImg2,gImg3]
+
     return(
         <div className="AddPost">
             <Navbar/>
@@ -35,15 +47,30 @@ function AddPost(){
                 </div>
                 <div>
                     <div>Content :</div> 
-                    <div><textarea id="content-input-area"  onChange={(e)=>{setContent(e.target.value)}} ></textarea></div>
+                    <div><textarea id="content-input-area"  onChange={(e)=>{setContent(e.target.value.toString())}} ></textarea></div>
                 </div>
                 <div>
-                    {content}
+                    <div>Display Image :</div>
+                    <div><input type="text" onChange={(e)=>{setDp(e.target.value)}}></input></div>
                 </div>
-                        
-
-
+                <div>
+                    <div>Gallery Image 1 :</div>
+                    <div><input type="text" onChange={(e)=>{setgImg1(e.target.value)}}></input></div>
+                </div>
+                <div>
+                    <div>Gallery Image 2 :</div>
+                    <div><input type="text" onChange={(e)=>{setgImg2(e.target.value)}}></input></div>
+                </div>
+                <div>
+                    <div>Gallery Image 3 :</div>
+                    <div><input type="text" onChange={(e)=>{setgImg3(e.target.value)}}></input></div>
+                </div>
+                <div className="Preview">
+                    <Post title={title} content={content} displayPic={dp} galleryImages={images}/>
+                </div>
             </div>
+            
+                
         </div>
     )
 }

@@ -27,21 +27,21 @@
     border-bottom: solid;
     padding-bottom: 10px;
     padding-top: 10px;
-
+    /* padding-left: 20px; */
 
 }
 .Content{
     text-align: left;
-    margin-left: 10px;
+    margin: 30px;
 }
 
 .ImagePost{
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.weekendthrill.com%2Fwp-content%2Fuploads%2F2016%2F07%2F1-1.jpg&f=1&nofb=1");
+    /* background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.weekendthrill.com%2Fwp-content%2Fuploads%2F2016%2F07%2F1-1.jpg&f=1&nofb=1"); */
     width: 150px;
     height: 150px;
-    background-size: 300px ;
+    background-size: 250px ;
     border-radius: 50%;
-    margin-right: 100px;
+    margin-right: 70px;
     
 }
 .PostName{

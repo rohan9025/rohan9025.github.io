@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser'); 
 
+require('.api/models/Posts');
+require('.api/routes/postRoutes')(app);
 
 const app = express();
 app.use(bodyParser.json());
