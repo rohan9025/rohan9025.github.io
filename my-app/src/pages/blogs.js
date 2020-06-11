@@ -9,10 +9,7 @@ const ReactMarkdown = require('react-markdown')
 
 
 
-function Body(){
-    const input = "## hello everybody \ni just wanted to say that i really really enjoy doing this"
-    
-    // '# This is a header\n\nAnd this is a paragraph'
+function Body(props){
 
     return(
         <div className="Body">
@@ -22,13 +19,13 @@ function Body(){
             </div>
             <div className="Posts">
                 <ul>
-                    <li><Post title="Gokarna" 
-                        content={input}
+                    {/* <li><Post title="Gokarna" 
+                        content="lmao"
                     /></li>
                      <li><Post title="Goa" 
                         content=
                         "yo whats up dman."
-                    /></li>
+                    /></li> */}
 
                 </ul>
             </div>
@@ -37,11 +34,11 @@ function Body(){
         </div>
     )
 }
-function Blogs(){
+function Blogs(props){
     return(
         <div className="Blogs">
             <Navbar/>
-            <Body/>
+            <Body section={props.section}/>
         </div>
     )
 

@@ -13,16 +13,21 @@ module.exports = (app) => {
 
 
   app.route('/api/posts/:section')
+  .get(post.read_a_section)
+//   .put(post.update_a_post)
+//   .delete(post.delete_a_post);
+  
+  app.route('/api/posts/:name')
   .get(post.read_a_post)
   .put(post.update_a_post)
   .delete(post.delete_a_post);
 
-  app.route('/api/post/:username')
-  .post(post.addpost)
-  .get(post.list_a_post);
+//   app.route('/api/post/:username')
+//   .post(post.addpost)
+//   .get(post.list_a_post);
 
-  app.route('/api/post/deletepost/:username')
-  .post(post.deletepost);
+//   app.route('/api/post/deletepost/:username')
+//   .post(post.deletepost);
 
 };
 

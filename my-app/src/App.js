@@ -21,6 +21,11 @@ function App() {
     <Router>
             <Route exact path='/'><Home/></Route>
             <Route exact path='/blogs'><Blogs/></Route>
+            <Route exact path='/travel'><Blogs section="travel"/></Route>
+            <Route exact path='/projects'><Blogs section="travel"/></Route>
+            <Route exact path='/movies'><Blogs section="travel"/></Route>
+
+
             <Route exact path='/home'><Home/></Route>
             <Route exact path='/admin'><Admin/></Route>
             

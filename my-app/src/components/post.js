@@ -32,7 +32,7 @@ function Post(props){
     return(
 
         <div className="Post">
-            <div className="Left">
+            <div className="Left" style={{backgroundColor: props.bckgcolor}}>
 
             </div>
             <div className="Right">
