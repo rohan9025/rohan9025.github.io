@@ -3,6 +3,15 @@ import './admin.css'
 import Navbar from '../components/navbar'
 import Post from '../components/post'
 import Select from 'react-select';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    // useParams,
+    Link,
+    Redirect,
+    browserHistory
+  } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -14,9 +23,13 @@ const ReactMarkdown = require('react-markdown')
 function Login(props){
     const [username,setUsername]=useState("")
     const [password,setPassword]=useState("")
+    const [error,seterror]=useState(false)
     function validate(){
         if(username=="rohan9025" && password=="rohan123"){
             props.setLoggedin(true)
+        }
+        else{
+            seterror(true)
         }
     }
     return(
@@ -24,7 +37,8 @@ function Login(props){
             <div className="HeaderBox">Admin Login</div>
             <div className="">Username : <input id="loginInput"type="text" onChange={(e)=>setUsername(e.target.value)}/></div>
             <div className="">Password : <input id="loginInput"type="password"onChange={(e)=>setPassword(e.target.value)} /></div>
-            <div ><button className="SubmitButton" onClick={()=>validate()}>Login</button></div>
+            <div ><button className="SubmitButton" onClick={()=>validate()}>Login</button><button className="SubmitButton"><Link to="/">Back</Link></button></div>
+            {error && <div>! Invalid Credentials</div>}
         </div>
 
     )
@@ -117,7 +131,7 @@ function AddPost(){
     )
 }
 function Admin(){
-    const [loggedin,setLoggedin]=useState(true)   
+    const [loggedin,setLoggedin]=useState(false)   
     
     return(
         <div className = "Admin">

@@ -8,11 +8,13 @@
     /* box-shadow: 2px 2px; */
     box-shadow: 0 0 2px 2px darkgray; /* with blur shadow*/
     margin-bottom: 50px;
+    color: black;
 }
 .Right{
     width: 80%;
     display: flex;
     flex-direction: column;
+    background-color: rgb(250, 236, 209);
 }
 .Left{
     width: 20%;
@@ -26,6 +28,7 @@
     /* box-shadow: 2px 2px; */
     display: flex;
     border-bottom: solid;
+    border-color: black;
     padding-bottom: 10px;
     padding-top: 10px;
     /* padding-left: 20px; */
@@ -49,3 +52,13 @@
     margin: auto;
     margin-right: 200px;
 }
+.LikesButton{
+    border: transparent;
+    background-color: transparent;
+    outline:none;
+    margin-top: 60px;
+}
+/* .LikesButton>:active{outline: 0px;}
+.LikesButton>:focus{outline: 0px;}
+.LikesButton>:hover{outline: 0px;} */
+

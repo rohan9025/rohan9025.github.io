@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './post.css'
 import '../images/bg.png'
 import { Slide } from 'react-slideshow-image';
@@ -29,10 +29,15 @@ function Post(props){
         //         console.log(`slide transition from ${oldIndex} to ${newIndex}`);
         //     }
         // }
+    const [like,setlike]=useState(false)
     return(
 
         <div className="Post">
             <div className="Left" style={{backgroundColor: props.bckgcolor}}>
+                <div className="Likes" > <button className="LikesButton" onClick={()=>setlike(!like)}>
+                    {like&&<img src="https://img.icons8.com/dusk/64/000000/two-hearts.png"/>}
+                    {!like &&<img src="https://img.icons8.com/wired/64/000000/two-hearts.png"/>}
+                    </button></div>
 
             </div>
             <div className="Right">

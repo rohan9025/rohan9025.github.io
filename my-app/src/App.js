@@ -4,21 +4,23 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home.js'
 import Blogs from './pages/blogs.js'
-import Admin from './pages/admin'
+import Admin from './auth/admin'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   // useParams,
   Link,
-  Redirect
+  Redirect,
+  browserHistory
 } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       
-    <Router>
+    
+    <Router basename={process.env.PUBLIC_URL}>
             <Route exact path='/'><Home/></Route>
             <Route exact path='/blogs'><Blogs/></Route>
             <Route exact path='/travel'><Blogs section="travel"/></Route>

@@ -11,7 +11,7 @@ function Home(){
             <Navbar/>
             <div className="CentralBox">
                 <div className="Image"/>
-                <div className="Name"><h2>Rohan R Nedungadi</h2></div>
+                {/* <div className="Name"><h2>Rohan R Nedungadi</h2></div> */}
                 <div className="Navigation">
                     {/* <div><Link to="/travel">Travel Diary</Link></div>
                     <div><Link to="/movies">Movie Discussions</Link></div>

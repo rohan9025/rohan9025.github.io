@@ -1,6 +1,7 @@
 .Admin{
     height: 100%;
     /* padding-top: -40px; */
+    color: tomato;
 
 }
 
@@ -20,10 +21,10 @@
     margin: auto;
     margin-top: 10%;
     
-    background-color: rgb(110, 148, 252) ;
+    background-color: black ;
     box-shadow: 0 0 2px 2px darkgray;
 
-    height: 200px;
+    height: 250px;
     width: 400px;
     /* border: solid; */
 
@@ -45,8 +46,8 @@
     border-radius: 10px;
     height:30px;
     width: 60px;
-    color: whitesmoke;
-    
+    color: tomato;
+    margin-left: 10px;
     
 }
 
@@ -90,10 +91,15 @@
 #content-input{
     width: 300px;
     height:30px;
+    background-color: grey;
+    border-radius: 5px;
+
 }
 #content-input-area{
     width: 600px;
     height:400px;
+    background-color: grey;
+    border-radius: 5px;
 
 
 }
@@ -103,6 +109,7 @@
     margin-bottom: 200px;
     border-radius: 2px;
     border: transparent;
+    background-color: tomato;
     box-shadow: 0 0 2px 2px darkgray;
 
 }
