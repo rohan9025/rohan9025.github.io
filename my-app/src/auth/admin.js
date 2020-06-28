@@ -16,7 +16,7 @@ import {
 
 
 
-const ReactMarkdown = require('react-markdown')
+// const ReactMarkdown = require('react-markdown')
 
 
 
@@ -43,7 +43,34 @@ function Login(props){
 
     )
 }
-function AddPost(){
+function ViewPosts(props){
+
+    const rendercurrentposts = postings=>{
+        console.log(postings.section)
+        return (
+            <div style={{backgroundColor: postings.section}}>
+                <div>{postings.title} </div>
+                <div><button>Edit</button><button>Delete</button></div>
+            </div>
+        )
+    }
+    return(
+        
+        <div className="ViewPosts">
+            <SwitchBar setAddORview={props.setAddORview} addORview={props.addORview}/>
+            <div className="viewGrid">
+                {props.posts.map((postings)=>rendercurrentposts(postings))}
+            </div>
+        </div>
+    )
+}
+
+function SwitchBar(props){
+    return(
+        <div><button onClick={()=>props.setAddORview(false)}>View</button><button onClick={()=>props.setAddORview(true)} >Add</button></div>
+    )
+}
+function AddPost(props){
 
     const [content,setContent]=useState("")
     const [title,setTitle]=useState("")
@@ -53,15 +80,26 @@ function AddPost(){
     const [gImg3,setgImg3]=useState("")
     const images=[gImg1,gImg2,gImg3]
 
-    const [section,setSection]=useState("")
+    const [section,setSection]=useState("mediumaquamarine")
 
     async function posting(){
+        let singlepost = {
+            "content":content,
+            "title":title,
+            "dp":dp,
+            "images":images,
+            "section":section,
+        }
+        console.log(props.posts)
+        props.setPosts([singlepost].concat(props.posts))
+        console.log(props.posts)
 
     }
 
     return(
         <div className="AddPost">
-            <Navbar/>
+            {/* <Navbar/> */}
+            <SwitchBar setAddORview={props.setAddORview} addORview={props.addORview}/>
             <div className="FormBox">
                 <div>
                     <div>Section :</div> 
@@ -130,13 +168,16 @@ function AddPost(){
         </div>
     )
 }
-function Admin(){
-    const [loggedin,setLoggedin]=useState(false)   
+function Admin(props){
+    const [loggedin,setLoggedin]=useState(false)
+    const [addORview, setAddORview]=useState(false)   
     
     return(
         <div className = "Admin">
+            <Navbar/>
             {!loggedin&&<Login  setLoggedin={setLoggedin}/>    }
-            { loggedin && <AddPost/>}      
+            { loggedin &&addORview &&<AddPost posts={props.posts} setPosts={props.setPosts} addORview={addORview} setAddORview={setAddORview}/>}    
+            { loggedin && !addORview && <ViewPosts posts={props.posts} setPosts={props.setPosts} addORview={addORview} setAddORview={setAddORview}/>}  
         </div>
     )
 }
