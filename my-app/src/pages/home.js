@@ -17,9 +17,11 @@ function Home(){
                     <div><Link to="/movies">Movie Discussions</Link></div>
                     <div><Link to="/thoughts">Random Thoughts</Link></div>
                     <div><Link to="/projects">Projects</Link></div> */}
-                    <div><Link to="/blogs">Blogs</Link></div>
+                    {/* <div><Link to="/blogs">Blogs</Link></div> */}
                     <div><a href="https://github.com/rohan9025">GitHub</a></div>
-                    <div><a href="">Resume</a></div>
+                    <div><Link to="/About">About</Link></div>
+
+                    <div><a href="https://drive.google.com/file/d/1naflXiiz4F3hQmYV5oeSyvrVHVeXscLi/view">Resume</a></div>
 
 
                 </div>

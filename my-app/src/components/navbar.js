@@ -11,7 +11,7 @@ function Navbar(){
                 {/* <div><Link to="/travel">Travel Diaries</Link></div> */}
                 {/* <div><Link to="/movies">Movies</Link></div> */}
                 {/* <div><Link to="/projects">Projects</Link></div> */}
-                <div><Link to="/blogs">Blogs</Link></div>
+                {/* <div><Link to="/blogs">Blogs</Link></div> */}
                 <div><Link to="/about">About</Link></div>
 
             </div>
