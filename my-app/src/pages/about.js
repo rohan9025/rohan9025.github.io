@@ -3,6 +3,7 @@ import Navbar from '../components/navbar.js'
 import AboutPost from "../components/aboutPosts"
 import './about.css'
 import { Link } from 'react-router-dom';
+import PostsForAbout from '../components/aboutPosts';
 
 function About(){
 
@@ -17,7 +18,8 @@ function About(){
                         Hey, my name's Rohan Nedungadi<br/>
                         <br/>
                         Computer Science Undergraduate<br/> 
-                        Mahindra Ecole Centrale ,Mahindra University<br/>
+                        Ecole Centrale School of Engineering<br/>
+                        Mahindra University<br/>
                         MEC batch of 2021<br/>
                         {/* <br/> */}
                         <br/>
@@ -31,13 +33,7 @@ function About(){
                 </div>
                 <div>
                 </div>
-                <h1>Experience</h1>
-                <div className="Experience">
-                    <AboutPost/>
-                    <AboutPost/>
-                    <AboutPost/>
-                    <AboutPost/>
-                </div>
+                <PostsForAbout/>
                 
 
             

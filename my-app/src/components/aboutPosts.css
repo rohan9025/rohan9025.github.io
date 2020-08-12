@@ -33,10 +33,14 @@
     justify-content: center;
     text-align: center;
     
-    height:250px;
-    width: 250px;
-    border-radius: 50%;
-    background-image: url("https://avatars0.githubusercontent.com/u/45610741?s=280&v=4");
+    height:200px;
+    width: 200px;
+    border-radius: 20%;
+    background-image: url("https://ctovision.com/wp-content/uploads/bro-ids.png");
+    margin-right: 10px;
+    margin-top: 35px;
+
+    /* background-image: url("https://avatars0.githubusercontent.com/u/45610741?s=280&v=4"); */
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-size: cover;
@@ -48,7 +52,7 @@
     width: 800px;
     margin-left: 10px;
     height: auto;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     border-radius: 20px;
     /* padding-left:20px;
     padding-top: 10px; */
@@ -72,4 +76,60 @@
 }
 .Duration{
     font-size: small;
+}
+.KeyWords{
+    font-size: small;
+}
+
+.Date{
+    font-size: small;
+}
+
+.Info{
+    margin-right: 10px;
+}
+
+.Info>ul{
+    list-style: none; /* Remove default bullets */
+}
+.Info>ul li::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: black; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.PostsForAbout>h1{
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    /* text-align: left; */
+}
+
+.Title{
+
+}
+
+
+@media screen and (max-width: 800px){
+
+    .AboutPost{
+        width: 100%;
+        flex-direction: column;
+        /* height:200px; */
+    }
+    .Content{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+        /* height: 200px; */
+    }
+    .DisplayImg{
+        margin: auto;
+        margin-bottom: 10px;
+
+    }
 }
