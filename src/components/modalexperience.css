@@ -1,0 +1,97 @@
+
+.Tab
+{
+    width : 300px;   
+    height: 250px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 20px;
+    
+
+    /* border-radius: 50px; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Tab>:hover{
+    background-color: lightsalmon;
+}
+.Tab>:focus{ outline :0px;}
+.InfoTab{
+    background-color: lightgrey;
+    /* height: 100%; */
+    /* width: 100%; */
+    border-bottom: 20px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    padding-left:20px;
+    padding-right: 20px;
+
+    /* padding:20px; */
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    height: 150px;
+    justify-content: center;
+}
+.Topic{
+    padding-top: 20px;
+}
+
+.HeaderTab{
+    background-color: tomato;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* height: 60%; */
+    padding-top:20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    height: 40px;
+    justify-content: center;
+    /* height: ; */
+
+
+}
+
+.Cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ModalClose{
+    border-radius: 50%;
+    margin-left: 80%;
+}
+
+/* .ReactModal__Overlay {
+    opacity: 1;
+    transition: opacity 2000ms ease-in-out;
+} */
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.modal-backdrop
+{
+    opacity:0.5 !important;
+}
+
+
+@media screen and (max-width: 800px){
+    
+.Cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* .ReactModal__Content--after-open{
+    width: 90%;
+} */
+
+}
+
+

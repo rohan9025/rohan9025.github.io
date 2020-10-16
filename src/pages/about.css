@@ -1,0 +1,81 @@
+
+
+.About{
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutBody{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+
+.AboutBody>h1{
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    /* text-align: left; */
+}
+
+.ImageBio{
+    background-image: url("../images/retro.jpeg");
+    height:300px;
+    width:300px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* box-shadow: 0 0 15px 6px black; with blur shadow */
+
+}
+.Bio{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    /* height: 80vh; */
+
+    
+}
+
+.BioData{
+    color: whitesmoke;
+    height:300px;
+    border-left: solid;
+    padding-left: 30px;
+    margin-left: 50px;
+    width:500px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1000px){
+    .Bio{
+        flex-direction: column;
+        margin:auto;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .BioData{
+        border-left: none;
+        /* margin:auto; */
+        text-align: center;
+        width: 100%;
+        margin-left: -20px;
+        
+        
+    }
+    .AboutBody{
+        width: 100%;
+    }
+    .ImageBio{
+        /* text-align: center; */
+        margin: auto;
+        /* width: 100%; */
+        /* margin-left: 20px; */
+    }
+
+}
